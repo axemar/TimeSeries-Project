@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ## Modification
 
-Because we implemented this project on `Python 3.12` with `NumPy 1.20`, we had to modify the `main_ucr.py` file on the line 138 : 
+Because we implemented this project on `Python 3.12` with `NumPy 1.26`, we had to modify the `main_ucr.py` file (and its variants) on the line 138 : 
 
 ```python
 # Before
@@ -58,8 +58,6 @@ data=np.zeros((1, 21), dtype=float)
 Run the program on a single UCR dataset [Beef](data/sample/Beef).
 
 ```bash
-cd your_workspace/MultiRocket
-
 python main_ucr.py -d data/sample/ -p Beef -n 10000 -v 2
 ```
 Arguments explanation :
@@ -68,12 +66,35 @@ Arguments explanation :
 - The number of features (-n) we choose `10000` (default is 50000)
 - The verbosity (-v) we choose `2` (it's easier to follow the steps and debug) 
 
+## Run our experimentations
+
+Our goal is to suggest ideas to improve MultiRocket.
+
+Look at our [results](improvements/CheckingResults.ipynb) in our `ipynb` file.
+
+To reproduce our experimentation, run the following lines over these 4 datasets : 
+
+- `InsectWingbeatSound`
+- `StarLightCurves`
+- `ElectricDevices`
+- `Crop`
+
+```bash
+python main_ucr.py -d data/sample/ -p InsectWingbeatSound -n 10000 -v 2
+
+python main_ucr.py -d data/sample/ -p InsectWingbeatSound -n 49728 -v 2
+
+python main_ucr_var.py -d data/sample/ -p InsectWingbeatSound -n 62160 -v 2
+
+python main_ucr_skew.py -d data/sample/ -p InsectWingbeatSound -n 62160 -v 2
+
+python main_ucr_mlp.py -d data/sample/ -p InsectWingbeatSound -n 49728 -v 2
+```
+
 ## Outputs
 
-Experiment outputs are written in the [output](output/) folder.  
+After running these lines, the raw experiment outputs are written in the [output](output/) folder.  
 You will find per-resample CSVs, aggregated results and timing logs.
-
-For the walkthrough quick run, the [output](output/multirocket/resample_0/MultiRocket_10000/Beef/results.csv) is available. Our `test_accuracy` is `0.77`, exactly like in the given benchmark.
 
 ## Authors & Acknowledgements
 
@@ -84,7 +105,8 @@ For the walkthrough quick run, the [output](output/multirocket/resample_0/MultiR
 This repository was created as part of a UCD time-series final project implementing the [ChangWeiTan/MultiRocket](https://github.com/ChangWeiTan/MultiRocket.git) experiments.
 
 ## Reference
-```
+
+```bibtex
 @article{Tan2021MultiRocket,
   title={{MultiRocket}: Multiple pooling operators and transformations for fast and effective time series classification},
   author={Tan, Chang Wei and Dempster, Angus and Bergmeir, Christoph and Webb, Geoffrey I},

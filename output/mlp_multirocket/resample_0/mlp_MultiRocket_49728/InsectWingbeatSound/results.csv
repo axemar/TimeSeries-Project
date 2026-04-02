@@ -1,0 +1,2 @@
+timestamp,itr,classifier,num_features,dataset,train_acc,train_time,test_acc,test_time,generate_kernel_time,apply_kernel_on_train_time,apply_kernel_on_test_time,train_transform_time,test_transform_time,physical_cores,logical_cores,max_freq,min_freq,memory
+2026-04-01 19:57:16,0,mlp_MultiRocket_49728,49728,InsectWingbeatSound,-1,2.4185355410154443,0.6237373737373737,0.21592641700408421,0.027849083009641618,0.09755308402236551,0.8665038330073003,6.495800334960222e-05,0.0004221250128466636,10,10,4,0,17.0

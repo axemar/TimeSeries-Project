@@ -1,2 +1,0 @@
-timestamp,itr,classifier,num_features,dataset,train_acc,train_time,test_acc,test_time,generate_kernel_time,apply_kernel_on_train_time,apply_kernel_on_test_time,train_transform_time,test_transform_time,machine,processor,physical_cores,logical_cores,max_freq,min_freq,memory
-2026-03-28 18:57:16,0,MultiRocket_10000,10000,Beef,-1,1.9874009960003605,0.7666666666666667,0.002980363999995461,0.04086330700010876,0.07291090600028838,0.07180031200005033,0.0005124159997649258,0.00012978099948668387,aea5fc74afe0,x86_64,1,2,0.0,0.0,14.0

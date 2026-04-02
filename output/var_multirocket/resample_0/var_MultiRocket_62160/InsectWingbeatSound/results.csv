@@ -1,0 +1,2 @@
+timestamp,itr,classifier,num_features,dataset,train_acc,train_time,test_acc,test_time,generate_kernel_time,apply_kernel_on_train_time,apply_kernel_on_test_time,train_transform_time,test_transform_time,physical_cores,logical_cores,max_freq,min_freq,memory
+2026-04-01 17:19:54,0,var_MultiRocket_62160,62160,InsectWingbeatSound,-1,2.3549612080096267,0.6267676767676768,0.3463855000154581,0.027857334003783762,0.1275819590082392,0.9409593750024214,0.00012170799891464412,0.0004938750062137842,10,10,4,0,17.0
