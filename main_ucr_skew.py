@@ -17,7 +17,7 @@ import pytz
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 
-from multirocket.multirocket import MultiRocket
+from improvements.skew_multirocket import MultiRocket
 from utils.data_loader import read_univariate_ucr, non_109_datasets
 from utils.tools import create_directory
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     verbose = arguments.verbose
 
     output_path = os.getcwd() + "/output/"
-    classifier_name = "MultiRocket_{}".format(num_features)
+    classifier_name = "skew_MultiRocket_{}".format(num_features)
 
     data_folder = data_path + problem + "/"
 
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
         start = time.perf_counter()
 
-        output_dir = "{}/multirocket/resample_{}/{}/{}/".format(
+        output_dir = "{}/skew_multirocket/resample_{}/{}/{}/".format(
             output_path,
             itr,
             classifier_name,
