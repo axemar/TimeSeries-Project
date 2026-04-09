@@ -89,6 +89,10 @@ python main_ucr_var.py -d data/sample/ -p InsectWingbeatSound -n 62160 -v 2
 python main_ucr_skew.py -d data/sample/ -p InsectWingbeatSound -n 62160 -v 2
 
 python main_ucr_mlp.py -d data/sample/ -p InsectWingbeatSound -n 49728 -v 2
+
+python main_ucr_rf.py -d data/sample/ -p InsectWingbeatSound -n 49728 -v 2
+
+python main_ucr_ker7.py -d data/sample/ -p InsectWingbeatSound -n 20720 -v 2
 ```
 
 ## Outputs

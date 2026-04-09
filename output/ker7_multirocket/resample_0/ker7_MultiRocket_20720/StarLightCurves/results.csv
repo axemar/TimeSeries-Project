@@ -1,0 +1,2 @@
+timestamp,itr,classifier,num_features,dataset,train_acc,train_time,test_acc,test_time,generate_kernel_time,apply_kernel_on_train_time,apply_kernel_on_test_time,train_transform_time,test_transform_time,physical_cores,logical_cores,max_freq,min_freq,memory
+2026-04-09 19:25:23,0,ker7_MultiRocket_20720,20720,StarLightCurves,-1,2.6094457089784555,0.9821515298688683,0.46359749999828637,0.030103124969173223,0.5307126249535941,4.247447042027488,0.0009553330019116402,0.00802520802244544,10,10,4,0,17.0
