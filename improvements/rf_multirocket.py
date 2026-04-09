@@ -504,8 +504,8 @@ class MultiRocket:
                 random_state=42,
                 n_jobs=-1
             )
-        elif self.clf.lower() == "mlp":
-            raise ValueError("This RF file is for classifier='rf'. Use mlp_multirocket.py for MLP experiments.")
+        
+        
         else:
             self.classifier = LogisticRegression(
                 num_features=x_train_transform.shape[1],
