@@ -1,0 +1,2 @@
+timestamp,itr,classifier,num_features,dataset,train_acc,train_time,test_acc,test_time,generate_kernel_time,apply_kernel_on_train_time,apply_kernel_on_test_time,train_transform_time,test_transform_time,physical_cores,logical_cores,max_freq,min_freq,memory
+2026-04-09 17:41:17,0,rf_MultiRocket_49728,49728,StarLightCurves,-1,1.2990300000528805,0.9809373482272948,0.08451708301436156,0.08075312501750886,1.147780041967053,9.489227665995713,0.0009376669768244028,0.007409208978060633,10,10,4,0,17.0
