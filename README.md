@@ -6,7 +6,7 @@ MultiRocket is a Python project implementing variations of the Rocket family for
 
 This GitHub repository is a coursework project for UCD Time Series module.
 
-## Original work
+## Original work & Acknowledgements
 
 This repository uses the [ChangWeiTan/MultiRocket](https://github.com/ChangWeiTan/MultiRocket.git) GitHub repository, which contains scripts, utilities, dataset indices and small helpers to run, reproduce, and evaluate experiments on univariate and multivariate time-series classification benchmarks.
 
@@ -29,7 +29,6 @@ Arguments:
 -s --save               : 0=don't save results, 1=save results
 -v --verbose            : verbosity
 ``` 
-
 
 ## Getting started
 
@@ -66,11 +65,16 @@ Arguments explanation :
 - The number of features (-n) we choose `10000` (default is 50000)
 - The verbosity (-v) we choose `2` (it's easier to follow the steps and debug) 
 
+## Outputs
+
+After the runs, the raw experiment outputs are written in the [output](output/) folder.  
+You will find per-resample CSVs, aggregated results and timing logs.
+
 ## Run our experimentations
 
 Our goal is to suggest ideas to improve MultiRocket.
 
-Look at our [results](improvements/CheckingResults.ipynb) in our `ipynb` file.
+Look at our [results](improvements/Results.ipynb) file.
 
 To reproduce our experimentation, run the following lines over these 4 datasets : 
 
@@ -95,18 +99,19 @@ python main_ucr_rf.py -d data/sample/ -p InsectWingbeatSound -n 49728 -v 2
 python main_ucr_ker7.py -d data/sample/ -p InsectWingbeatSound -n 20720 -v 2
 ```
 
-## Outputs
+## Results
 
-After running these lines, the raw experiment outputs are written in the [output](output/) folder.  
-You will find per-resample CSVs, aggregated results and timing logs.
+The following results compare our 7 models across 4 selected datasets from the [UCR Time Series Classification Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) (out of 109 available).
 
-## Authors & Acknowledgements
+<p align="center">
+  <img src="improvements/CDD.png"/>
+</p>
+
+## Authors 
 
 - Axel Marchand (25262999)
 - Edward Mallia (25233259)
 - Aisling Wallace (25257061)
-
-This repository was created as part of a UCD time-series final project implementing the [ChangWeiTan/MultiRocket](https://github.com/ChangWeiTan/MultiRocket.git) experiments.
 
 ## Reference
 
